@@ -81,5 +81,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
   const code:HTMLPreElement = document.querySelector('pre');
   code.classList.add(`language-${document.location.hash.replace('#', '') || 'lua'}`);
   Update();
+  // @ts-ignore
+  document.querySelectorAll('.container.bbcode').forEach((element:HTMLPreElement) => {
+    element.addEventListener('click', ()=>{
+      // @ts-ignore
+      window.getSelection().selectAllChildren(element.querySelector('pre'));
+      navigator.clipboard.writeText(element.innerText);
+    });
+  });
   inpTxt.addEventListener('keyup', Update);
 });
