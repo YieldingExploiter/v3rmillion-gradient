@@ -1,0 +1,28 @@
+{
+  "name": "v3rgradient",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "yieldingexploiter",
+  "license": "ISC",
+  "dependencies": {
+    "color": "^4.2.3",
+    "color-lerp": "^1.0.5",
+    "gradient-color": "^2.0.1",
+    "parcel": "^2.6.2"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "browserslist": "> 0.5%, last 5 versions, not dead",
+  "devDependencies": {
+    "@norathefurry/eslint-config": "^1.1.2",
+    "@parcel/core": "^2.6.2",
+    "@parcel/optimizer-data-url": "^2.6.2",
+    "@parcel/transformer-inline-string": "^2.6.2",
+    "@types/color": "^3.0.3",
+    "@types/luaparse": "^0.2.8",
+    "eslint": "^8.20.0"
+  }
+}

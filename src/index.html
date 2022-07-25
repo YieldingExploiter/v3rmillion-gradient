@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>v3rmillion gradient thing (Yielding#3961)</title>
+    <link rel="stylesheet" href="data-url:styles.css" />
+    <script src="data-url:app.ts" type="module"></script>
+  </head>
+  <body>
+    <div class="container">
+      <a href="ast/code.html">Lua5.1 formatter</a>
+      <h1>
+        <a href="https://v3rmillion.net/showthread.php?tid=1180196"
+          >V3rmillion (bbcode) Gradient Thing</a
+        >
+      </h1>
+      <p>does gradients for posts and stuff</p>
+      <textarea
+        type="text"
+        name="input"
+        id="input"
+        cols="120"
+        rows="16"
+        placeholder="input text"
+      ></textarea>
+      <hr />
+      <p>size per colour (1-10 chars)</p>
+      <input
+        type="range"
+        name="blocksize"
+        id="blocksize"
+        min="1"
+        max="10"
+        step="1"
+      />
+      <hr />
+      <p>colours</p>
+      <div class="colours">
+        <input type="color" name="colour" />
+        <input type="color" name="colour" />
+      </div>
+      <button>swap colours</button>
+      <hr />
+      <textarea
+        name="output"
+        id="output"
+        cols="120"
+        rows="8"
+        readonly="readonly"
+        disabled="disabled"
+      ></textarea>
+      <p id="preview"></p>
+    </div>
+  </body>
+</html>
