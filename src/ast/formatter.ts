@@ -69,7 +69,7 @@ const Update = ()=>{
       str = `[b]${str}[/b]`;
     Data.push(str);
   });
-  const output = Data.join('');
+  const output = `[font=monospace]${Data.join('')}[/font]`;
   // @ts-ignore
   const bbcode: HTMLPreElement = document.querySelector('.container.bbcode > pre');
   bbcode.textContent = output;
