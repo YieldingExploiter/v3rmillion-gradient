@@ -1,4 +1,5 @@
-import hljs from './highlight/highlight';
+// @ts-ignore
+import hljs from './highlight/min';
 import Color from 'color';
 let inpTxt;
 const Update = ()=>{
@@ -16,6 +17,7 @@ const Update = ()=>{
   // @ts-ignore
   const code:HTMLPreElement = document.querySelector('pre');
   code.textContent = codeText;
+  // @ts-ignore
   hljs.highlightElement(code);
   const _elements = code.querySelectorAll('span');
   let elements: Element[] = [];
