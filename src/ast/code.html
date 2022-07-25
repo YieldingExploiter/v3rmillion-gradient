@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="data-url:../styles.css" />
+    <script type="module" src="data-url:formatter.ts"></script>
+    <link rel="stylesheet" href="data-url:./highlight/styles/dark.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>v3rmillion bbcode stuff (Yielding#3961)</title>
+    <style>
+      .container > pre {
+        display: inline-block;
+        overflow-x: auto;
+        overflow-y: auto;
+        width: fit-content;
+        text-align: left;
+        padding: 8px 16px;
+        max-width: 75vw;
+      }
+      .container {
+        position: absolute;
+        left: 50vw;
+        transform: translate(-50%, 0);
+        max-width: 75vw;
+      }
+      .bbcode {
+        bottom: 8px;
+      }
+      .bbcode > pre {
+        height: 16em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <a href="https://v3rmillion.net/showthread.php?tid=1180196"
+        >V3rmillion (bbcode) Code Generator thing</a
+      >
+    </h1>
+    <p>inspired by my bbcode gradient thingy</p>
+    <p>
+      to use languages other than lua, they must be supported by highlightjs -
+      just add #&lt;language&gt; to the URL and it will use that language.
+    </p>
+    <p>
+      example:
+      <a
+        href="#typescript"
+        onclick="setTimeout(()=>document.location.reload(),250)"
+        >typescript</a
+      >&nbsp;
+      <a href="#lua" onclick="setTimeout(()=>document.location.reload(),250)"
+        >lua</a
+      >&nbsp;
+      <a href="#cs" onclick="setTimeout(()=>document.location.reload(),250)"
+        >c#</a
+      >
+    </p>
+    <textarea
+      name="inputText"
+      id="inputText"
+      cols="30"
+      rows="10"
+      placeholder="input text"
+    ></textarea>
+    <div class="container">
+      <pre></pre>
+    </div>
+    <br />
+    <div class="container bbcode">
+      <pre class="hljs"></pre>
+    </div>
+  </body>
+</html>
