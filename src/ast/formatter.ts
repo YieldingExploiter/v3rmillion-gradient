@@ -45,7 +45,7 @@ const Update = ()=>{
     const isBold = txtWeight > defaultWeight;
     const find = text.indexOf(txt);
     let preText = text.substring(0, find);
-    if (isFirst && text.startsWith(preText))
+    if (isFirst && txt.startsWith(preText))
       preText = '';
     if (preText.length !== 0)
       segments.push({
